@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-// import type { UserResponse, UserSubset } from '@/common/types/users'
 
 export const useSettingsStore = defineStore(
   'settings',

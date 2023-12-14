@@ -16,18 +16,14 @@ export const useUserStore = defineStore(
           `https://random-data-api.com/api/v2/users?size=${settings.userSize}`
         )
 
-        users.value = res.data.map(user => {
-          const subset: UserSubset = {
-            avatar: user.avatar,
-            email: user.email,
-            first_name: user.first_name,
-            id: user.id,
-            last_name: user.last_name,
-            username: user.username
-          }
-
-          return subset
-        })
+        users.value = res.data.map(user => ({
+          avatar: user.avatar,
+          email: user.email,
+          first_name: user.first_name,
+          id: user.id,
+          last_name: user.last_name,
+          username: user.username
+        }))
       } catch (error) {
         console.error(error)
       }
