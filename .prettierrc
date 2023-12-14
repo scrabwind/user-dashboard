@@ -1,0 +1,9 @@
+{
+  "useTabs": false,
+  "semi": false,
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "vueIndentScriptAndStyle": true,
+  "singleAttributePerLine": true,
+  "trailingComma": "none"
+}
