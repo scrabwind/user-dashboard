@@ -36,6 +36,7 @@
         class="settings__size"
       />
       <button
+        type="button"
         class="settings__reset-button"
         @click="store.setDefaults"
       >

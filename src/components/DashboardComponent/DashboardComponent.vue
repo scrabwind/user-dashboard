@@ -21,8 +21,8 @@
       <tbody class="dashboard__tbody">
         <tr
           class="dashboard__row"
-          v-for="(user, i) in store.users"
-          :key="i"
+          v-for="user in store.users"
+          :key="user.id"
         >
           <td class="dashboard__data">
             <img
@@ -47,10 +47,6 @@
   import { useUserStore } from '@/common/stores/users'
 
   const store = useUserStore()
-
-  // onMounted(async () => {
-  //   await store.downloadUsers()
-  // })
 </script>
 <style scoped lang="scss">
   .dashboard {
